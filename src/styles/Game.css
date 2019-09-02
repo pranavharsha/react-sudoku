@@ -1,0 +1,81 @@
+.gridInput {
+    text-align: center!important;
+    border-radius: 0px!important;
+}
+
+.gridInputOuter {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #DDDDEE;
+    cursor: pointer;
+}
+
+.gridInputOuterDis {
+    background-color: #ddddee00;
+    cursor: inherit;
+}
+
+.gridInputOuterActive {
+    /* border: 1px solid #03f2d6; */
+    background-color: #03f2d6;
+    opacity: 0.2;
+    transform: scale(1.1);
+}
+
+.gridInputMistake {
+    border: 1px solid red;
+}
+
+.gridInputOuterNumSel {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #243D4E;
+    cursor: pointer;
+}
+
+.gameResDiv {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.timerDiv {
+    float: right;
+}
+
+.gridOuterRow .gridInputOuter:nth-child(3n) {
+    border-right: 2px solid #000000;
+}
+
+.gridOuterRow .gridInputOuter:last-child {
+    border-right: 1px solid #DDDDEE;
+}
+
+.gridDiv .gridOuterRow:nth-child(3n) {
+    border-bottom: 2px solid #000000;
+}
+
+.gridDiv .gridOuterRow:last-child {
+    border-bottom: 1px solid #DDDDEE;
+}
+
+@media only screen and (max-width: 500px) {
+    .gridInputOuter {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .gridInputOuterNumSel {
+        width: 30px;
+        height: 30px;
+        padding: 5px;
+    }
+    .timerDiv {
+        float: left;
+    }
+}
